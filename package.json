@@ -3,6 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "build": "flex-plugin build",
+    "dev": "flex-plugin start",
+    "deploy": "flex-plugin deploy",
+    "release": "flex-plugin release",
     "postinstall": "node -e \"const fs=require('fs');const os=require('os');const path=require('path');const cp=require('child_process');const cliPkg=path.join(os.homedir(),'.twilio-cli','package.json');if(fs.existsSync(cliPkg)){cp.execSync('flex-plugin pre-script-check',{stdio:'inherit'});}else{console.log('Skipping flex-plugin pre-script-check (Twilio CLI not found).');}\"",
     "start": "npm --prefix asap-roadworthys-functions start"
   },

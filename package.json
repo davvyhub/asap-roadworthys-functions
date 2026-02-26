@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "flex-plugin pre-script-check"
+    "postinstall": "flex-plugin pre-script-check",
+    "start": "npm --prefix asap-roadworthys-functions start"
   },
   "dependencies": {
     "@twilio/flex-plugin": "7.1.2",
